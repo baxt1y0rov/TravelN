@@ -1,4 +1,4 @@
-import { Container, Title, Accordion, Center } from '@mantine/core';
+import { Container, Title, Accordion, Center, Divider } from '@mantine/core';
 import classes from './FaqSimple.module.css';
 
 
@@ -37,6 +37,7 @@ export default function FaqSimple() {
             <Accordion.Panel>{placeholder}</Accordion.Panel>
           </Accordion.Item>
         </Accordion>
-    </Container>
+    </Container>  
+    
   );
 }

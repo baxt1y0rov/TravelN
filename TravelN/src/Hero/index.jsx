@@ -8,14 +8,7 @@ export default function HeroText() {
     <Container className={classes.wrapper} size={1400}>
 
       <div className={classes.inner} style={{marginBottom:60}}>
-        <Center>
-        <Image src='../../../public/TravelN.png' style={{width:120, margin:60,marginTop:5}}></Image>
-        </Center>
-        <Title ta="center" style={{textAlign:Center}}className={classes.title}>
-          T R A V E L - N{' '}
-        </Title>
-
-        <Container style={{marginTop:30,marginBottom:40}} p={0} size={600}>
+        <Container style={{marginTop:40,marginBottom:40}} p={0} size={600}>
           <Text size="lg" c="dimmed"  ta="center"className={classes.description}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eum soluta ipsum provident corporis et est sapiente, blanditiis temporibus aspernatur, odit sed, esse hic sequi doloremque qui! Reprehenderit, neque numquam.
           </Text>
