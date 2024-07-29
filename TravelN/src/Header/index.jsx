@@ -22,34 +22,34 @@ import {
   import { MantineLogo } from '@mantinex/mantine-logo';
   import { useDisclosure } from '@mantine/hooks';
   import {
-    IconNotification,
+    IconTower,
     IconCode,
-    IconBook,
+    IconToolsKitchen2,
     IconChartPie3,
-    IconFingerprint,
-    IconCoin,
+    IconHomeSearch,
+    IconBuildingArch,
     IconChevronDown,
   } from '@tabler/icons-react';
   import classes from './HeaderMegaMenu.module.css';
   
   const mockdata = [
     {
-      icon: IconCode,
+      icon: IconTower,
       title: 'Palaces',
       description: 'Travel to open sky museums to historical buldings and villages',
     },
     {
-      icon: IconCoin,
+      icon: IconBuildingArch,
       title: 'Museums',
       description: 'Travel to museums that contains historical subjects',
     },
     {
-      icon: IconBook,
+      icon: IconToolsKitchen2,
       title: 'Restaurants',
       description: 'Go to the Restaurants if you got hungry',
     },
     {
-      icon: IconFingerprint,
+      icon: IconHomeSearch,
       title: 'Hotels',
       description: 'Look for Hotels to survive and sleep',
     },

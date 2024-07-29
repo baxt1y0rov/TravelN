@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import HeroContentLeft from './Hero'
 import FaqSimple from './Aboutus'
-// import Card from './Components/Recommendations'
 import { createTheme, MantineProvider, Center, Title, Divider, Text  } from '@mantine/core';
 import { ColorSchemeScript } from '@mantine/core';
 import '@mantine/core/styles.css';
@@ -13,6 +12,8 @@ import HeaderMegaMenu from './Header/'
 import GradientSegmentedControl from './Components/Filter'
 import InputWithButton from './Components/Searchbar'
 import FooterCentered from './Footer'
+import Demo from './Recommendations'
+import Karusel from './Carousel';
 
 const theme = createTheme({
   breakpoints: {
@@ -39,6 +40,10 @@ function App() {
       <HeroContentLeft/>
       <Divider my="md" />
       <FaqSimple/>
+      <Divider my="md" />
+      <Demo/>
+      <Divider my="md" />
+      <Karusel/>
       <Divider my="md" />
       <FooterCentered/>
       <Text c="dimmed" size="sm" ta='center' style={{marginBottom:20}}>
