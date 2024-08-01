@@ -6,6 +6,7 @@ import '@mantine/carousel/styles.css';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 
+
 const data = [
   {
     image:
@@ -83,7 +84,11 @@ export default function Demo() {
 
   return (
     <Carousel
+      controlSize={30}
+      controlsOffset="xl"
       withindicator plugins={[autoplay.current]}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={autoplay.current.reset}
       slideSize={{ base: '100%', sm: '50%' }}
       slideGap={{ base: 'xl', sm: 2 }}
       align="start"

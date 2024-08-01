@@ -14,6 +14,8 @@ import InputWithButton from './Components/Searchbar'
 import FooterCentered from './Footer'
 import Demo from './Recommendations'
 import Karusel from './Carousel';
+import Affiks from './Affix'
+import GetInTouchSimple from './Contactus'
 
 const theme = createTheme({
   breakpoints: {
@@ -32,6 +34,7 @@ function App() {
   return (
     <MantineProvider defaultColorScheme="light">
       <HeaderMegaMenu />
+      <Affiks/>
       <Title ta="center"> T R A V E L - N</Title>
       <Center>
         <GradientSegmentedControl/>
@@ -43,7 +46,11 @@ function App() {
       <Divider my="md" />
       <Demo/>
       <Divider my="md" />
+      <GetInTouchSimple/>
+      <Divider my="md" />
       <Karusel/>
+      <Divider my="md" />
+      <GetInTouchSimple/>
       <Divider my="md" />
       <FooterCentered/>
       <Text c="dimmed" size="sm" ta='center' style={{marginBottom:20}}>
