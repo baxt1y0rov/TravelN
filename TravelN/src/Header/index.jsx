@@ -31,6 +31,8 @@ import {
     IconChevronDown,
   } from '@tabler/icons-react';
   import classes from './HeaderMegaMenu.module.css';
+
+  import Logo from '../assets/TravelN.png'
   
   const mockdata = [
     {
@@ -83,7 +85,7 @@ import {
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
           <div className="class" style={{display:'flex'}}>
-            <Image src="../../public/traveln.png" style={{height:35,marginRight:10}}alt="Logo"></Image>
+            <Image src={Logo} style={{height:35,marginRight:10}}alt="Logo"></Image>
             <Title size={27}>Travel N</Title>
           </div>
             <Group h="100%" gap={0} visibleFrom="sm">
