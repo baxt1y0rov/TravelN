@@ -1,6 +1,6 @@
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
-import {Box, Image, Paper } from '@mantine/core';
+import {Box, Image, Paper,Title } from '@mantine/core';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 
@@ -34,6 +34,7 @@ export default function Karusel() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   return (
     <Box className='bigcontainer' >
+    <Title ta='center'order={3} className='title'>More to Explore</Title>
     <Carousel 
       className='container'
       slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
