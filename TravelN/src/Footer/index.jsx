@@ -1,7 +1,7 @@
 import { Anchor, Group, ActionIcon, rem, Image, Title, Paper } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterCentered.module.css';
+import Logo from '../assets/TravelN.png'
 
 const links = [
   { link: '#', label: 'Contact' },
@@ -31,7 +31,7 @@ export default function FooterCentered() {
     <div className={classes.footer}>
       <div className={classes.inner}>
         <div className="class" style={{display:'flex'}}>
-            <Image src="../../public/traveln.png" style={{height:35,marginRight:10}}alt="Logo"></Image>
+            <Image src={Logo} style={{height:35,marginRight:10}}alt="Logo"></Image>
             <Title size={27}>Travel N</Title>
         </div>
 
