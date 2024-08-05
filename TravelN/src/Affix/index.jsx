@@ -12,6 +12,7 @@ export default function Affiks() {
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {(transitionStyles) => (
             <Button
+              color='#fcb30c'
               className='button'
               radius={'xl'}
               style={{transitionStyles,borderWidth:2,borderColor:'white'}}

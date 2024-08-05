@@ -18,7 +18,7 @@ export default function HeroText() {
           <Button className={classes.control} style={{margin:10}}size="lg" variant="default" color="gray">
             About Us
           </Button>
-          <Button className={classes.control} style={{margin:10}}size="lg">
+          <Button className={classes.control} style={{margin:10}}size="lg" color='#fcb30c'>
             TRAVEL
           </Button>
         </div>

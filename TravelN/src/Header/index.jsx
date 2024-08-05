@@ -64,7 +64,7 @@ import {
       <UnstyledButton className={classes.subLink} key={item.title}>
         <Group wrap="nowrap" align="flex-start">
           <ThemeIcon size={34} variant="default" radius="md">
-            <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
+            <item.icon style={{ width: rem(22), height: rem(22) }} color='#fcb30c' />
           </ThemeIcon>
           <div>
             <Text size="sm" fw={500}>
@@ -99,7 +99,7 @@ import {
                       </Box>
                       <IconChevronDown
                         style={{ width: rem(16), height: rem(16) }}
-                        color={theme.colors.blue[6]}
+                        color='#fcb30c'
                       />
                     </Center>
                   </a>
@@ -107,8 +107,8 @@ import {
   
                 <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                   <Group justify="space-between" px="md">
-                    <Text fw={500}>Travek</Text>
-                    <Anchor href="#" fz="xs">
+                    <Text fw={500}>Travel</Text>
+                    <Anchor style={{color:'#E09D00'}} href="#" fz="xs">
                       View all Locations
                     </Anchor>
                   </Group>
@@ -144,7 +144,7 @@ import {
   
             <Group visibleFrom="sm">
               <Button variant="default">Log in</Button>
-              <Button>Sign up</Button>
+              <Button color='#fcb30c'>Sign up</Button>
             </Group>
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
@@ -173,7 +173,7 @@ import {
                 </Box>
                 <IconChevronDown
                   style={{ width: rem(16), height: rem(16) }}
-                  color={theme.colors.blue[6]}
+                  color='#fcb30c'
                 />
               </Center>
             </UnstyledButton>
@@ -188,8 +188,8 @@ import {
             <Divider my="sm" />
   
             <Group justify="center" grow pb="xl" px="md">
-              <Button variant="default">Log in</Button>
-              <Button>Sign up</Button>
+              <Button variant='default'>Log in</Button>
+              <Button color='#fcb30c'>Sign up</Button>
             </Group>
           </ScrollArea>
         </Drawer>

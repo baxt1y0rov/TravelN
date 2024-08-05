@@ -16,6 +16,21 @@ import Demo from './Recommendations'
 import Karusel from './Carousel';
 import Affiks from './Affix'
 import GetInTouchSimple from './Contactus'
+import { ColorPicker } from '@mantine/core';
+
+const myColor = [
+  '#fff9e1',
+  '#fff0cc',
+  '#fee09c',
+  '#fdcf66',
+  '#fdc13a',
+  '#fcb81e',
+  '#fcb30c',
+  '#e09d00',
+  '#c88b00',
+  '#ad7700'
+];
+
 
 const theme = createTheme({
   breakpoints: {
@@ -24,6 +39,10 @@ const theme = createTheme({
     md: '64em',
     lg: '74em',
     xl: '90em',
+
+    colors: {
+      myColor,
+    }
   },
 });
 
@@ -47,9 +66,7 @@ function App() {
       <Demo/>
       <Divider my="md" />
       <GetInTouchSimple/>
-      <Divider my="md" />
       <Karusel/>
-      <Divider my="md" />
       <GetInTouchSimple/>
       <Divider my="md" />
       <FooterCentered/>

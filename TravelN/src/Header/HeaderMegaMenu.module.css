@@ -8,13 +8,15 @@
 .link {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 70%;
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
+  border-radius: 30px;
+  transition: 0.3s;
 
   @media (max-width: $mantine-breakpoint-sm) {
     height: rem(42px);
@@ -22,7 +24,7 @@
   }
 
   @mixin hover {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    background-color: light-dark(var(--mantine-color-yellow-0), var(--mantine-color-dark-6));
   }
 }
 
@@ -30,6 +32,7 @@
   width: 100%;
   padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
   border-radius: var(--mantine-radius-md);
+  transition: 0.3s;
 
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
