@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import HeroContentLeft from './Hero'
 import FaqSimple from './Aboutus'
-import { createTheme, MantineProvider, Center, Title, Divider, Text  } from '@mantine/core';
+import { createTheme, MantineProvider, Center, Title, Divider, Text, Container } from '@mantine/core';
 import { ColorSchemeScript } from '@mantine/core';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
@@ -67,7 +67,9 @@ function App() {
       <Divider my="md" />
       <GetInTouchSimple/>
       <Karusel/>
+      <Container className={'GetintouchContainer'} style={{width:700}}>
       <GetInTouchSimple/>
+      </Container>
       <Divider my="md" />
       <FooterCentered/>
       <Text c="dimmed" size="sm" ta='center' style={{marginBottom:20}}>
