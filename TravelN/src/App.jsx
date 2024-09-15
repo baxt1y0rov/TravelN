@@ -67,7 +67,7 @@ function App() {
       <Divider my="md" />
       <GetInTouchSimple/>
       <Karusel/>
-      <Container className={'GetintouchContainer'} style={{width:700}}>
+      <Container className={'GetintouchContainer'}>
       <GetInTouchSimple/>
       </Container>
       <Divider my="md" />
